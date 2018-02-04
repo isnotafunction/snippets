@@ -10,14 +10,13 @@
   <body>
   <div class="container">
     <div class="card">
-      <h4 contenteditable="true">Title...</h4>
-      <p class="text" contenteditable="true"> Edit me...</p>
-      <button class="x" onClick="this.parentNode.parentNode.removeChild(this.parentNode);">x</button>
+      <pre><code id="content" contenteditable="true"> code snippet...</code></pre>
+      <button class="x" onClick="this.parentNode.parentNode.removeChild(this.parentNode)">x</button>
     </div>
 
-    <div class="plus"> + </div>
+    <button class="plus"> + </button>
   </div>
-
+  <footer><button class="clear"> clear all </button></footer>
 
   <script type="text/javascript" src="script.js"></script>
   </body>
