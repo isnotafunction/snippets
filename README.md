@@ -1,4 +1,4 @@
-##[Snippets](isnotafunction.github.io/snippets)
+[##Snippets](https://isnotafunction.github.io/snippets/)
 
 I built this simple non-linear note-taking tool to take quick notes in browser while I'm working on something and research in depth/organise them later.
 
