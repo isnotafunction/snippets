@@ -57,7 +57,7 @@ function saveEdits(e) {
       var text = e.target.innerText;
       data.text.push(text.trim());
       updateStorage()
-    }, 5000)
+    }, 4000)
   }
 
 //save to localStorage
