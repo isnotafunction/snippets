@@ -14,7 +14,6 @@ body{
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /*height: 80%;*/
   color:#3b5b72;
 }
 
@@ -26,32 +25,29 @@ body{
  flex-grow: 1;
  border-radius: 10px;;
  background-color: #fff;
- font-family: 'Source Code Pro', monospace;
  display: flex;
  flex-direction: column;
  justify-content:space-between;
  opacity: 1;
  }
 
- /*pre{
-
- }*/
-
 #content{
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   padding: 20px;
   margin: 0;
   min-height: 10%;
   max-height: 80%;
-  overflow-y:auto;
-  overflow-x: hidden;
+  overflow: hidden;
   outline: none;
 }
-
 .x{
+  font-family: 'Indie Flower', cursive;
+  /*font-family: 'Nunito', sans-serif;*/
+  font-size: 2rem;
   padding: 0;
-  width: 1.5rem;
-  height: 1.5rem;
+  width:2.5rem;
+  height: 2.5rem;
   background-color: white;
   border-radius: 50%;
   color: #f44253;
@@ -61,12 +57,8 @@ body{
 }
 .x:hover{
   opacity: 1;
-  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-}
-.x:active{
-  opacity: 1;
 }
 
 .plus{
@@ -89,6 +81,7 @@ body{
 }
 
 footer{
+  position: fixed;
   height: 10%;
   width: 100%;
 }

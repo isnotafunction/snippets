@@ -38,7 +38,7 @@ function createCard(){
   card.setAttribute("class","card")
   content.setAttribute("contenteditable", "true")
   content.setAttribute("id", "content")
-  content.innerText = "code snippet..."
+  content.innerText = "snippets..."
   xButton.setAttribute("class", "x")
   xButton.setAttribute("onClick", "this.parentNode.parentNode.removeChild(this.parentNode)")
   xButton.innerText = "x"
@@ -57,7 +57,7 @@ function saveEdits(e) {
       var text = e.target.innerText;
       data.text.push(text.trim());
       updateStorage()
-    }, 2000)
+    }, 5000)
   }
 
 //save to localStorage
@@ -80,22 +80,8 @@ function renderDivs(){
   }
 }
 
-
-
+// clear localStorage and refresh
 clear.addEventListener("click", function(){
   window.localStorage.clear()
   document.location.reload(true)
 })
-
- // Array.from(p).forEach(function(el){
- // for(var i=0; i<p.length; i++){
-  //  console.log(el.innerText)
-  //  console.log("end")
- // }
-  // data.text.push(userVersion)
-  // console.log(data)
-  // localStorage.setItem("items", JSON.stringify(data))
- // }
-
-
-// console.log(data.text)
