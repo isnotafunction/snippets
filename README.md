@@ -1,9 +1,11 @@
-##Flesh Cards
+##[Snippets](isnotafunction.github.io/snippets)
 
-User journey
+A personal non-linear note taking tool (wip)
+
+
 As a user I want to be able to:
 
-* click on a button to add a new flesh-card to the deck :check:
+* click on a button to add a new snipped-card to the deck :check:
 * add/edit title :check:
 * add/edit card's content :check:
 * click on a button to delete all storage and refresh :check:
@@ -12,11 +14,13 @@ As a user I want to be able to:
 * change background colour
 * change card's colour
 * drag and drop cards
+
 One day I want to be able to:
-* resize cards  
+* resize the cards  
 * add code editing bit using back ticks
 * drag and drop images inside them
 
 - research:
-* security issues with contenteditable
-* how to easily add html tags without rendering
+* find a better way to trigger storing of the edited text instead of timeout
+* security issues with contenteditable?
+* how to easily add html tags without rendering 
