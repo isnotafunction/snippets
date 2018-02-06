@@ -5,9 +5,13 @@ body{
   width: 100vw;
   font-family: 'Roboto', sans-serif;
   overflow: scroll;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
   /*background-color: #7A7F87;*/
   animation: colorchange 120s infinite;
   -webkit-animation: colorchange 120s infinite;
+
 }
 
 .container{
@@ -130,4 +134,14 @@ footer{
 	60%{background-color:#A89A2F;}
 	80%{background-color:#68A86A;}
 	100%{background-color:#6D6DA8;}
+}
+
+@media(min-width: 1400px){
+  .container{
+    max-width: 1400px;
+    max-height: 80%;
+  }
+  .card{
+    min-width: 300px;
+  }
 }
