@@ -17,7 +17,6 @@ plus.addEventListener("click", function(){
 
 parent.addEventListener("click", function(e){
   if(e.target.matches("button.x")){
-    console.log(e.target)
   var element = e.path[1].firstElementChild.innerText
   console.log(element)
   console.log(typeof(element))
@@ -33,11 +32,11 @@ parent.addEventListener("click", function(e){
 
 function createCard(){
   var card = document.createElement("div")
-  var content = document.createElement("p")
+  var content = document.createElement("textarea")
   var xButton = document.createElement("button")
   card.setAttribute("class","card")
-  content.setAttribute("contenteditable", "true")
   content.setAttribute("id", "content")
+  content.setAttribute("value", "")
   content.innerText = "snippets..."
   xButton.setAttribute("class", "x")
   xButton.setAttribute("onClick", "this.parentNode.parentNode.removeChild(this.parentNode)")
@@ -54,7 +53,8 @@ var timeout;
 function saveEdits(e) {
     clearTimeout(timeout);
     timeout = setTimeout(function(){
-      var text = e.target.innerText;
+      var text = e.target.value;
+      console.log(e.target.value)
       data.text.push(text.trim());
       updateStorage()
     }, 4000)
@@ -72,7 +72,7 @@ function renderDivs(){
     var textToInsert = data.text[i];
     var cardToRender =
     `<div class="card">
-      <p id="content" contenteditable="true" > ${textToInsert}</p>
+      <textarea id="content" value="${textToInsert}"> ${textToInsert}</textarea>
       <button class="x" onClick="this.parentNode.parentNode.removeChild(this.parentNode)">x</button>
     </div>
     `

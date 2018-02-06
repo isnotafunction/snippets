@@ -4,9 +4,6 @@ body{
   height: 100vh;
   width: 100vw;
   font-family: 'Roboto', sans-serif;
-  /*background: linear-gradient(to right, #369cd3, #3bd6ad);*/
-  /*background: linear-gradient(to top, #eaecc6, #2bc0e4);*/
-  /*background-color: #3bd6ad;*/
   overflow: scroll;
   background-color: #88FFFA;
   animation: colorchange 120s infinite;
@@ -32,22 +29,24 @@ body{
  display: flex;
  flex-direction: column;
  justify-content:space-between;
- opacity: 0.9;
+ overflow:hidden
  }
 
 #content{
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  padding: 20px;
+  padding: 15px;
   margin: 0;
-  min-height: 10%;
-  max-height: 80%;
   overflow: hidden;
   outline: none;
+  border: none;
+  border-radius: 10px;
+  max-height: 80%;
+  min-height: 7rem;
+  max-width: 80%;
 }
 .x{
   font-family: 'Indie Flower', cursive;
-  /*font-family: 'Nunito', sans-serif;*/
   font-size: 2rem;
   padding: 0;
   width:2.5rem;
@@ -58,6 +57,7 @@ body{
   opacity: 0.2;
   border:none;
   outline: none;
+  box-sizing: border-box;
 }
 .x:hover{
   opacity: 1;
