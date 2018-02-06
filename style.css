@@ -5,7 +5,7 @@ body{
   width: 100vw;
   font-family: 'Roboto', sans-serif;
   overflow: scroll;
-  background-color: #88FFFA;
+  /*background-color: #7A7F87;*/
   animation: colorchange 120s infinite;
   -webkit-animation: colorchange 120s infinite;
 }
@@ -15,7 +15,6 @@ body{
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  color:#3b5b72;
 }
 
 .card{
@@ -25,11 +24,13 @@ body{
  min-width: 250px;
  flex-grow: 1;
  border-radius: 10px;;
- background-color: #fff;
  display: flex;
  flex-direction: column;
  justify-content:space-between;
- overflow:hidden
+ overflow:hidden;
+ /*background-color: #7A7F87;*/
+ animation: colorchangeReverse 120s infinite;
+ -webkit-animation: colorchangeReverse 120s infinite;
  }
 
 #content{
@@ -46,6 +47,10 @@ body{
   max-height: 80%;
   min-height: 7rem;
   max-width: 80%;
+  color: #fff;
+  /*background-color: #7A7F87;*/
+  animation: colorchangeReverse 120s infinite;
+  -webkit-animation: colorchangeReverse 120s infinite;
 }
 .x{
   font-family: 'Indie Flower', cursive;
@@ -53,13 +58,16 @@ body{
   padding: 0;
   width:2.5rem;
   height: 2.5rem;
-  background-color: white;
   border-radius: 50%;
-  color: #FF8454;
+  /*color: #FF8454;*/
+  color:#fff;
   opacity: 0.2;
   border:none;
   outline: none;
   box-sizing: border-box;
+  /*background-color: #7A7F87;*/
+  animation: colorchangeReverse 120s infinite;
+  -webkit-animation: colorchangeReverse 120s infinite;
 }
 .x:hover{
   opacity: 1;
@@ -107,11 +115,19 @@ footer{
   box-shadow: 0 0 10px white;
   transform: scale(1.1);
 }
-
+@keyframes colorchangeReverse {
+	0% {background-color:#4C4C75;}
+	20%{background-color:#44756C;}
+	40%{background-color:#5B3A57;}
+	60%{background-color:#756B20;}
+	80%{background-color:#48754A;}
+	100%{background-color:#4C4C75;}
+}
 @keyframes colorchange {
-	0% {background-color:#62AFAF;}
-	20%{background-color:#AAB538}
-	40%{background-color:#FFCC68;}
-	60%{background-color:#FC8383;}
-	80%{background-color:#6A5F91;}
-	100%{background-color:#62AFAF;}
+	0% {background-color:#6D6DA8;}
+	20%{background-color:#61A89B;}
+	40%{background-color:#A36183;}
+	60%{background-color:#A89A2F;}
+	80%{background-color:#68A86A;}
+	100%{background-color:#6D6DA8;}
+}
