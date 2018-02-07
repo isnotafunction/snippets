@@ -19,6 +19,8 @@ body{
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  min-height: auto;
+  overflow-y: auto;
 }
 
 .card{
@@ -99,12 +101,9 @@ body{
 .plus:active{
   transform: scale(1.1);
 }
-
 footer{
-  position:absolute;
-   bottom:0;
-  height: 10%;
   width: 100%;
+  flex:1;
 }
 .clear{
  height: 60px;
@@ -114,7 +113,7 @@ footer{
  border-radius: 50%;
  border: 2px solid #fff;
  color:#fff;
- margin-bottom: 10px;
+ margin-top: 10px;
  outline: none;
 }
 .clear:hover{
