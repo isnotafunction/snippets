@@ -27,6 +27,7 @@ parent.addEventListener("click", function(e){
 })
 
 var uid = (localStorage.getItem("uid"))? JSON.parse(localStorage.getItem("uid")): 0
+
 function createCard(){
   uid++
   var card = document.createElement("div")
@@ -36,7 +37,7 @@ function createCard(){
   content.setAttribute("class", "content")
   content.setAttribute("id", `u${uid}`)
   content.setAttribute("value", "")
-  content.innerText = "snippets..."
+  content.setAttribute("placeholder", "my snippets...")
   xButton.setAttribute("class", "x")
   xButton.setAttribute("onClick", "this.parentNode.parentNode.removeChild(this.parentNode)")
   xButton.innerText = "x"

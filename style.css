@@ -39,6 +39,12 @@ body{
  -webkit-animation: colorchangeReverse 120s infinite;
  }
 
+ ::placeholder{
+  color:#fff;
+  opacity: 0.6;
+  font-family: "Indie Flower", sans-serif;
+ }
+
 .content{
   font-family: 'Encode Sans Expanded', sans-serif;
   font-weight: 300;
@@ -54,7 +60,6 @@ body{
   min-height: 7rem;
   max-width: 80%;
   color: #fff;
-  /*background-color: #7A7F87;*/
   animation: colorchangeReverse 120s infinite;
   -webkit-animation: colorchangeReverse 120s infinite;
 }
