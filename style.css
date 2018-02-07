@@ -37,7 +37,7 @@ body{
  -webkit-animation: colorchangeReverse 120s infinite;
  }
 
-#content{
+.content{
   font-family: 'Encode Sans Expanded', sans-serif;
   font-weight: 300;
   text-align: center;
