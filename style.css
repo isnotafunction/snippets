@@ -89,7 +89,7 @@ body{
   margin: 10px;
   border-radius: 50%;
   background-color:transparent;
-  color: #fff;
+  /*color: #fff;*/
   border: 2px solid #fff;
   font-size: 1rem;
   order:1;
@@ -104,16 +104,17 @@ body{
 footer{
   width: 100%;
   flex:1;
+  display: flex;
+  justify-content: flex-end;
 }
 .clear{
  height: 60px;
  width: 60px;
- float: right;
  background-color: transparent;
  border-radius: 50%;
  border: 2px solid #fff;
  color:#fff;
- margin-top: 10px;
+ margin: 1rem;
  outline: none;
 }
 .clear:hover{
