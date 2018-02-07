@@ -124,20 +124,20 @@ footer{
   transform: scale(1.1);
 }
 @keyframes colorchangeReverse {
-	0% {background-color:#4C4C75;}
-	20%{background-color:#44756C;}
+	0% {background-color:#44756C;}
+	20%{background-color:#4C4C75;}
 	40%{background-color:#5B3A57;}
 	60%{background-color:#756B20;}
 	80%{background-color:#48754A;}
-	100%{background-color:#4C4C75;}
+	100%{background-color:#44756C;}
 }
 @keyframes colorchange {
-	0% {background-color:#6D6DA8;}
-	20%{background-color:#61A89B;}
+	0% {background-color:#61A89B;}
+	20%{background-color:#6D6DA8;}
 	40%{background-color:#A36183;}
 	60%{background-color:#A89A2F;}
 	80%{background-color:#68A86A;}
-	100%{background-color:#6D6DA8;}
+	100%{background-color:#61A89B;}
 }
 
 @media(min-width: 1400px){
