@@ -86,7 +86,9 @@ body{
   width: 2rem;
   margin: 10px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color:transparent;
+  color: #fff;
+  border: 2px solid #fff;
   font-size: 1rem;
   order:1;
 }
@@ -99,18 +101,21 @@ body{
 }
 
 footer{
+  position:absolute;
+   bottom:0;
   height: 10%;
   width: 100%;
 }
 .clear{
- height: 20px;
+ height: 60px;
  width: 60px;
  float: right;
- background-color: white;
- border-radius: 5px;
+ background-color: transparent;
+ border-radius: 50%;
+ border: 2px solid #fff;
+ color:#fff;
  margin-bottom: 10px;
  outline: none;
- border:none;
 }
 .clear:hover{
   box-shadow: 0 0 10px white;
