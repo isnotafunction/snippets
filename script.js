@@ -60,10 +60,12 @@ function saveEdits(e) {
       var uid = e.target.id
       console.log(e.target.id)
       var index = data.findIndex(x => x.id == uid)
-      if(index == -1){
-          data.push({"text":text.trim(), "id": uid});
-      } else {
-        data[index] = {"text":text.trim(), "id": uid}
+      if(text.length>0){
+        if(index == -1){
+            data.push({"text":text.trim(), "id": uid});
+        } else {
+          data[index] = {"text":text.trim(), "id": uid}
+        }
       }
      console.log(data)
       toggleClear()
