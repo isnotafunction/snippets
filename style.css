@@ -10,7 +10,6 @@ body{
   align-items:center;
   animation: colorchange 120s infinite;
   -webkit-animation: colorchange 120s infinite;
-
 }
 
 .container{
@@ -89,6 +88,8 @@ body{
   border: 2px solid #fff;
   font-size: 1rem;
   order:1;
+  padding:0;
+  box-sizing: border-box;
 }
 .plus:hover{
   cursor: pointer;
@@ -113,6 +114,11 @@ footer{
  margin: 1rem;
  outline: none;
 }
+
+.off{
+  display:none;
+}
+
 .clear:hover{
   box-shadow: 0 0 10px #fff;
 }
