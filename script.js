@@ -66,7 +66,7 @@ function saveEdits(e) {
       }
      console.log(data)
       updateStorage()
-    }, 4000)
+    }, 1000)
   }
 
 //save to localStorage
