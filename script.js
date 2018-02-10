@@ -7,6 +7,11 @@ var data = (localStorage.getItem("item")) ? JSON.parse(localStorage.getItem("ite
 
 console.log(data)
 console.log(data.length)
+if(data.length<1){
+  clear.classList.add("off")
+} else {
+  clear.classList.remove("off")
+}
 renderDivs()
 
 plus.addEventListener("click", createCard)
@@ -22,6 +27,11 @@ parent.addEventListener("click", function(e){
   console.log("splicedElement " + splicedEle)
   updateStorage()
   console.log(data)
+  if(data.length<1){
+    clear.classList.add("off")
+  } else {
+    clear.classList.remove("off")
+  }
  }
 })
 
@@ -64,6 +74,12 @@ function saveEdits(e) {
         data[index] = {"text":text.trim(), "id": uid}
       }
      console.log(data)
+     if(data.length<1){
+       clear.classList.add("off")
+     } else {
+       clear.classList.remove("off")
+     }
+
       updateStorage()
     }, 1000)
   }
