@@ -8,9 +8,11 @@ var data = (localStorage.getItem("item")) ? JSON.parse(localStorage.getItem("ite
 console.log(data)
 console.log(data.length)
 if(data.length<1){
+  clear.classList.remove("fade")
   clear.classList.add("off")
 } else {
   clear.classList.remove("off")
+  clear.classList.add("fade")
 }
 renderDivs()
 
@@ -28,9 +30,11 @@ parent.addEventListener("click", function(e){
   updateStorage()
   console.log(data)
   if(data.length<1){
+    clear.classList.remove("fade")
     clear.classList.add("off")
   } else {
     clear.classList.remove("off")
+    clear.classList.add("fade")
   }
  }
 })
@@ -75,9 +79,11 @@ function saveEdits(e) {
       }
      console.log(data)
      if(data.length<1){
+       clear.classList.remove("fade")
        clear.classList.add("off")
      } else {
        clear.classList.remove("off")
+       clear.classList.add("fade")
      }
 
       updateStorage()

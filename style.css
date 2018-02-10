@@ -108,8 +108,8 @@ footer{
   justify-content: flex-end;
 }
 .clear{
- height: 60px;
- width: 60px;
+ height: 2.5rem;
+ width: 2.5rem;
  background-color: transparent;
  border-radius: 50%;
  border: 2px solid #fff;
@@ -121,6 +121,9 @@ footer{
 .off{
   display:none;
 }
+.fade{
+  animation: fading 1.5s ease-in-out;
+}
 
 .clear:hover{
   box-shadow: 0 0 10px #fff;
@@ -129,14 +132,7 @@ footer{
   box-shadow: 0 0 10px #fff;
   transform: scale(1.1);
 }
-/*@keyframes colorchangeReverse {
-	0% {background-color:#44756C;}
-	20%{background-color:#4C4C75;}
-	40%{background-color:#5B3A57;}
-	60%{background-color:#756B20;}
-	80%{background-color:#48754A;}
-	100%{background-color:#44756C;}
-}*/
+
 @keyframes colorchange {
 	0% {background-color:#61A89B;}
 	20%{background-color:#4C4C75;}
@@ -144,6 +140,11 @@ footer{
 	60%{background-color:#A89A2F;}
 	80%{background-color:#68A86A;}
 	100%{background-color:#61A89B;}
+}
+@keyframes fading {
+  0%{opacity:0;}
+  50%{opacity:0.5;}
+  100%{opacity:1;}
 }
 
 @media(min-width: 1400px){
