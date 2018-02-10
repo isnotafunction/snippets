@@ -7,13 +7,7 @@ var data = (localStorage.getItem("item")) ? JSON.parse(localStorage.getItem("ite
 
 console.log(data)
 console.log(data.length)
-if(data.length<1){
-  clear.classList.remove("fade")
-  clear.classList.add("off")
-} else {
-  clear.classList.remove("off")
-  clear.classList.add("fade")
-}
+toggleClear()
 renderDivs()
 
 plus.addEventListener("click", createCard)
@@ -29,13 +23,7 @@ parent.addEventListener("click", function(e){
   console.log("splicedElement " + splicedEle)
   updateStorage()
   console.log(data)
-  if(data.length<1){
-    clear.classList.remove("fade")
-    clear.classList.add("off")
-  } else {
-    clear.classList.remove("off")
-    clear.classList.add("fade")
-  }
+  toggleClear()
  }
 })
 
@@ -78,14 +66,7 @@ function saveEdits(e) {
         data[index] = {"text":text.trim(), "id": uid}
       }
      console.log(data)
-     if(data.length<1){
-       clear.classList.remove("fade")
-       clear.classList.add("off")
-     } else {
-       clear.classList.remove("off")
-       clear.classList.add("fade")
-     }
-
+      toggleClear()
       updateStorage()
     }, 1000)
   }
@@ -115,3 +96,13 @@ clear.addEventListener("click", function(){
   window.localStorage.clear()
   document.location.reload(true)
 })
+
+function toggleClear(){
+  if(data.length<1){
+    clear.classList.remove("fade")
+    clear.classList.add("off")
+  } else {
+    clear.classList.remove("off")
+    clear.classList.add("fade")
+  }
+}
