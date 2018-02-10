@@ -38,7 +38,6 @@ function createCard(){
   content.setAttribute("class", "content")
   content.setAttribute("id", `u${uid}`)
   content.setAttribute("value", "")
-  content.setAttribute("placeholder", "my snippets...")
   content.setAttribute("autofocus", "true")
   xButton.setAttribute("class", "x")
   xButton.setAttribute("onClick", "this.parentNode.parentNode.removeChild(this.parentNode)")
