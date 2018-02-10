@@ -6,7 +6,7 @@ var clear = document.querySelector('.clear')
 var data = (localStorage.getItem("item")) ? JSON.parse(localStorage.getItem("item")):[]
 
 console.log(data)
-
+console.log(data.length)
 renderDivs()
 
 plus.addEventListener("click", createCard)
@@ -14,8 +14,6 @@ plus.addEventListener("click", createCard)
 //deleting from the storage
 parent.addEventListener("click", function(e){
   if(e.target.matches("button.x")){
-  console.log(this.children[1])
-  parent.removeChild(this.children[1]);
   var uid = e.path[1].firstElementChild.id;
   console.log("this is uid "+ uid)
   var index = data.findIndex(x => x.id == uid)
@@ -40,6 +38,7 @@ function createCard(){
   content.setAttribute("value", "")
   content.setAttribute("placeholder", "my snippets...")
   xButton.setAttribute("class", "x")
+  xButton.setAttribute("onClick", "this.parentNode.parentNode.removeChild(this.parentNode)")
   xButton.innerText = "x"
   card.appendChild(content)
   card.appendChild(xButton)
